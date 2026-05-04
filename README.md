@@ -2,7 +2,7 @@
 **Assignment 2: Web App Development 1**
 
 ## Project Overview
-Console Archive is a web application for cataloguing gaming hardware history. Users can create an account, log in, and manage their own collection of manufacturers and consoles — adding, editing, deleting, and searching entries. Manufacturer logos can be uploaded via Cloudinary.
+Console Archive is a web application for cataloguing gaming hardware history. Users can create an account, log in, and manage their own collection of manufacturers and consoles adding, editing, deleting, and searching entries. Manufacturer logos can be uploaded via Cloudinary.
 
 Built with **Node.js**, **Express**, **Handlebars**, **LowDB**, and **Fomantic-UI**.
 

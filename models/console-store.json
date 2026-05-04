@@ -1,0 +1,58 @@
+{
+  "consoleCollection": [
+    {
+      "id": "01",
+      "userid": "u1",
+      "title": "Sony PlayStation",
+      "description": "The home of icons like God of War and Uncharted.",
+      "img": "",
+      "consoles": [
+        {
+          "id": "c1",
+          "name": "PlayStation 5",
+          "year": "2020",
+          "type": "Home Console",
+          "game": "Spider-Man 2"
+        },
+        {
+          "id": "c2",
+          "name": "PlayStation 4",
+          "year": "2013",
+          "type": "Home Console",
+          "game": "Bloodborne"
+        },
+        {
+          "id": "c3",
+          "name": "PlayStation Portable",
+          "year": "2004",
+          "type": "Handheld",
+          "game": "Monster Hunter Freedom"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "userid": "u1",
+      "title": "Microsoft Xbox",
+      "description": "Powerful hardware paired with the Game Pass ecosystem.",
+      "img": "",
+      "consoles": [
+        { "id": "c4", "name": "Xbox Series X", "year": "2020", "type": "Home Console", "game": "Halo Infinite" },
+        { "id": "c5", "name": "Xbox One", "year": "2013", "type": "Home Console", "game": "Grand Theft Auto V" },
+        { "id": "c6", "name": "Xbox 360", "year": "2005", "type": "Home Console", "game": "Gears of War" }
+      ]
+    },
+    {
+      "id": "03",
+      "userid": "u1",
+      "title": "Nintendo",
+      "description": "Innovative hardware and family-friendly classics.",
+      "img": "",
+      "consoles": [
+        { "id": "c7", "name": "Nintendo Switch", "year": "2017", "type": "Hybrid", "game": "Zelda: Breath of the Wild" },
+        { "id": "c8", "name": "GameCube", "year": "2001", "type": "Home Console", "game": "Super Smash Bros. Melee" },
+        { "id": "c9", "name": "GameBoy Color", "year": "1998", "type": "Handheld", "game": "Pokémon Gold/Silver" }
+      ]
+    }
+  ]
+}

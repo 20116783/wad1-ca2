@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Admin",
+      "email": "admin@consolearchive.com",
+      "password": "admin"
+    },
+    {
+      "name": "Tom Jones",
+      "email": "123456@it.ie",
+      "password": "2378",
+      "id": "e4e14c14-9bc0-4f6e-8332-38abadb24993"
+    },
+    {
+      "name": "Tom Jones",
+      "email": "123@abc.ie",
+      "password": "2378",
+      "id": "8af16c05-d0a6-4871-9f71-2a1d2180432d"
+    },
+    {
+      "name": "you ming",
+      "email": "you@example.com",
+      "password": "Password",
+      "id": "9a2689ae-ff71-4255-9285-a48ed0e0ebe5"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{{> menu}}
+
+<section class="ui container">
+
+    <div class="ui segment">
+        <h2 class="ui header">{{collection.title}}</h2>
+
+        <h3 class="ui header">Add New Console</h3>
+        <form class="ui form" action="/collection/{{collection.id}}/addconsole" method="POST">
+            <div class="four fields">
+                <div class="field">
+                    <input type="text" name="name" placeholder="Console Name" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="year" placeholder="Release Year" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="type" placeholder="Form Factor" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="game" placeholder="Best Selling Game" required>
+                </div>
+            </div>
+            <button class="ui primary button" type="submit">Add Console</button>
+        </form>
+    </div>
+
+    <div class="ui segment">
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Console Name</th>
+                    <th>Release Year</th>
+                    <th>Form Factor</th>
+                    <th>Best Selling Game</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each collection.consoles}}
+                    <tr>
+                        <td><input form="update-{{id}}" type="text" name="name" value="{{name}}"></td>
+                        <td><input form="update-{{id}}" type="text" name="year" value="{{year}}"></td>
+                        <td><input form="update-{{id}}" type="text" name="type" value="{{type}}"></td>
+                        <td><input form="update-{{id}}" type="text" name="game" value="{{game}}"></td>
+                        <td>
+                            <form id="update-{{id}}" action="/collection/{{../collection.id}}/updateconsole/{{id}}" method="POST"></form>
+                            <button form="update-{{id}}" class="ui small primary button" type="submit">Update</button>
+                            <a href="/collection/{{../collection.id}}/deleteconsole/{{id}}" class="ui small red button">Delete</a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <a href="/dashboard" class="ui labeled icon button">
+        <i class="left arrow icon"></i> Back to Dashboard
+    </a>
+
+</section>

@@ -1,0 +1,43 @@
+{{> menu id="stats"}}
+
+<section class="ui container">
+    <div class="ui segment">
+        <h2 class="ui header">Your Statistics</h2>
+        <div class="ui five statistics">
+            <div class="statistic">
+                <div class="value">{{totalCollections}}</div>
+                <div class="label">Manufacturers</div>
+            </div>
+            <div class="statistic">
+                <div class="value">{{totalConsoles}}</div>
+                <div class="label">Total Consoles</div>
+            </div>
+            <div class="statistic">
+                <div class="value">{{avgConsoles}}</div>
+                <div class="label">Avg per Manufacturer</div>
+            </div>
+            <div class="statistic">
+                <div class="value">{{maxConsoles}}</div>
+                <div class="label">Most in One</div>
+            </div>
+            <div class="statistic">
+                <div class="value">{{minConsoles}}</div>
+                <div class="label">Least in One</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui segment">
+        <h2 class="ui header">App-Wide Statistics</h2>
+        <div class="ui two statistics">
+            <div class="statistic">
+                <div class="value">{{totalUsers}}</div>
+                <div class="label">Registered Users</div>
+            </div>
+            <div class="statistic">
+                <div class="value">{{appTotalConsoles}}</div>
+                <div class="label">Consoles in Archive</div>
+            </div>
+        </div>
+    </div>
+</section>

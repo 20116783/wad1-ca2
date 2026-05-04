@@ -1,0 +1,12 @@
+{
+  "info": {
+    "appName": "Console Archive v2.0",
+    "author": "Nikita Zdunek",
+    "location": "Waterford, Ireland",
+    "stats": [
+      { "label": "Total Manufacturers", "value": "3" },
+      { "label": "Consoles Indexed", "value": "9" },
+      { "label": "Last Updated", "value": "March 2026" }
+    ]
+  }
+}

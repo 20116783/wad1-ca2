@@ -1,0 +1,33 @@
+{{> menu id="about"}}
+
+<section class="ui segment">
+    <div class="ui two column grid stackable">
+        <div class="column">
+            <h2>About the Developer</h2>
+            <p>Console Archive v2 was developed as part of Web App Development at SETU Waterford.</p>
+
+            <div class="ui statistics">
+                <div class="statistic">
+                    <div class="value">{{totalManufacturers}}</div>
+                    <div class="label">Manufacturers</div>
+                </div>
+                <div class="statistic">
+                    <div class="value">{{totalConsoles}}</div>
+                    <div class="label">Consoles Indexed</div>
+                </div>
+                <div class="statistic">
+                    <div class="value">{{lastUpdated}}</div>
+                    <div class="label">Last Updated</div>
+                </div>
+            </div>
+
+            <h4 class="ui header"><i class="mail icon"></i> Developer: {{info.author}}</h4>
+            <h4 class="ui header"><i class="map marker alternate icon"></i> {{info.location}}</h4>
+        </div>
+
+        <div class="column">
+            <h3 class="ui center aligned header">Location</h3>
+            <img class="ui fluid rounded image" src="https://www.google.com/maps/about/images/mymaps/mymaps-desktop-16x9.png" alt="Waterford, Ireland">
+        </div>
+    </div>
+</section>

@@ -1,0 +1,64 @@
+{{> menu id="dashboard"}}
+
+<section class="ui container">
+
+    <div class="ui segment">
+        <h2 class="ui header">Gaming Manufacturers</h2>
+
+        <form class="ui form" action="/dashboard/search" method="POST">
+            <div class="ui action input">
+                <input type="text" name="search" placeholder="Search manufacturers..." value="{{searchTerm}}">
+                <button class="ui primary button" type="submit">Search</button>
+                <a href="/dashboard" class="ui button">Clear</a>
+            </div>
+        </form>
+        <div style="margin-top:0.75rem;">
+            <a href="/dashboard?sort=az" class="ui small button">Sort A–Z</a>
+            <a href="/dashboard?sort=za" class="ui small button">Sort Z–A</a>
+        </div>
+    </div>
+
+    <div class="ui segment">
+        <h3 class="ui header">Add New Manufacturer</h3>
+        <form class="ui form" action="/dashboard/addcollection" method="POST" enctype="multipart/form-data">
+            <div class="three fields">
+                <div class="field">
+                    <input type="text" name="title" placeholder="Manufacturer Name" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="description" placeholder="Description" required>
+                </div>
+                <div class="field">
+                    <label>Logo Image (optional)</label>
+                    <input type="file" name="image" accept="image/*">
+                </div>
+            </div>
+            <button class="ui primary button" type="submit">Add Manufacturer</button>
+        </form>
+    </div>
+
+    <div class="ui three stackable cards">
+        {{#each collections}}
+            <div class="ui card">
+                {{#if img}}
+                    <div class="image">
+                        <img src="{{img}}" alt="{{title}}">
+                    </div>
+                {{/if}}
+                <div class="content">
+                    <div class="header">{{title}}</div>
+                    <div class="description">{{description}}</div>
+                </div>
+                <div class="extra content">
+                    <a href="/collection/{{id}}" class="ui small primary button">
+                        <i class="folder open icon"></i> View Consoles
+                    </a>
+                    <a href="/dashboard/deletecollection/{{id}}" class="ui small red button">
+                        <i class="trash icon"></i> Delete
+                    </a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
+</section>

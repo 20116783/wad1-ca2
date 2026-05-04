@@ -1,0 +1,125 @@
+:root {
+    --bg-page:    #0f111a;
+    --bg-card:    #1b1d29;
+    --accent:     #00b5ad;
+    --accent-glow: rgba(0, 181, 173, 0.15);
+    --border:     #2d3142;
+    --text-main:  #eeeeee;
+    --text-muted: #a0a0a0;
+}
+
+body {
+    background-color: var(--bg-page);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: var(--text-main);
+}
+
+.ui.inverted.menu {
+    background: #111320 !important;
+    border-bottom: 1px solid var(--border) !important;
+    border-radius: 0 !important;
+}
+
+.ui.inverted.menu .header.item a {
+    color: var(--accent) !important;
+    font-weight: 700 !important;
+    text-decoration: none;
+}
+
+.ui.inverted.menu .item:hover,
+.ui.inverted.menu .item.active {
+    color: var(--accent) !important;
+    background: var(--accent-glow) !important;
+}
+
+.ui.segment, .ui.raised.segment {
+    background-color: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}
+
+.ui.header {
+    color: var(--accent) !important;
+    font-weight: 600 !important;
+}
+
+.ui.cards .ui.card, .ui.card {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    color: var(--text-main) !important;
+    transition: border-color 0.2s !important;
+}
+
+.ui.cards .ui.card:hover, .ui.card:hover {
+    border-color: var(--accent) !important;
+}
+
+.ui.card .content { background: transparent !important; }
+.ui.card .header  { color: var(--text-main) !important; }
+.ui.card .description { color: var(--text-muted) !important; }
+.ui.card .extra.content {
+    background: rgba(0,0,0,0.2) !important;
+    border-top: 1px solid var(--border) !important;
+}
+
+.ui.primary.button {
+    background: var(--accent) !important;
+    color: #0f111a !important;
+}
+
+.ui.table {
+    background: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+.ui.table thead th {
+    background: #141621 !important;
+    color: var(--accent) !important;
+    border-bottom: 2px solid var(--border) !important;
+}
+
+.ui.table tbody td {
+    border-top: 1px solid var(--border) !important;
+}
+
+.ui.table tbody tr:hover {
+    background: #222533 !important;
+}
+
+.ui.form input[type="text"],
+.ui.form input[type="email"],
+.ui.form input[type="password"],
+.ui.input > input {
+    background: #0f111a !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+}
+
+.ui.form input:focus, .ui.input > input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 2px var(--accent-glow) !important;
+}
+
+.ui.statistics .statistic > .value { color: var(--accent) !important; }
+.ui.statistics .statistic > .label { color: var(--text-muted) !important; }
+
+.auth-card {
+    max-width: 420px;
+    margin: 3rem auto !important;
+}
+
+.app-footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.85em;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+}
